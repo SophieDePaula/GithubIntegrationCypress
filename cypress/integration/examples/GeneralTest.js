@@ -18,7 +18,7 @@ describe("Hello world", () => {
 
 describe("Hello world2", () => {
   it("works", () => {
-    cy.visit("https://applitools.com/helloworld?diff1");
+    cy.visit("https://applitools.com/helloworld?diff2");
 
     cy.eyesOpen({
       appName: "Netspend Website",
