@@ -7,4 +7,5 @@ install: npm install
 script:
   - export APPLITOOLS_BATCH_ID=`echo ${TRAVIS_PULL_REQUEST_SHA:=$TRAVIS_COMMIT}`
   - echo $APPLITOOLS_BATCH_ID
+  - npx eyes-setup
   - npx cypress run --spec "cypress/integration/examples/general.spec.js"
