@@ -1,0 +1,10 @@
+# don't build tags, it's redundant
+if: tag IS blank
+language: node_js
+node_js:
+  - 12
+install: npm install
+script:
+  - export APPLITOOLS_BATCH_ID=`echo ${TRAVIS_PULL_REQUEST_SHA:=$TRAVIS_COMMIT}`
+  - echo $APPLITOOLS_BATCH_ID
+  - npx cypress run --spec GeneralTest.js
