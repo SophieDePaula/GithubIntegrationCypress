@@ -5,6 +5,7 @@ node_js:
   - 12
 install: npm install
 script:
+  - npm i
   - export APPLITOOLS_BATCH_ID=`echo ${TRAVIS_PULL_REQUEST_SHA:=$TRAVIS_COMMIT}`
   - echo $APPLITOOLS_BATCH_ID
   - npx cypress run --spec GeneralTest.js
