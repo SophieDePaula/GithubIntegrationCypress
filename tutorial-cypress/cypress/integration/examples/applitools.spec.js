@@ -2,7 +2,7 @@ describe('Hello Cypress, This is Applitools', () => {
   it('works', () => {
     cy.visit('https://applitools.com/');
     cy.eyesOpen({
-      appName: 'Applitools1',
+      appName: 'Applitools',
       testName: 'Github Cypress Integration',
       browser: { width: 800, height: 600 },
     });
