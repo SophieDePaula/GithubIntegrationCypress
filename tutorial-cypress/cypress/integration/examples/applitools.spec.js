@@ -1,9 +1,9 @@
 describe('Hello Cypress, This is Applitools', () => {
   it('works', () => {
-    cy.visit('https://applitools.com/helloworld?diff2');
+    cy.visit('https://applitools.com/');
     cy.eyesOpen({
-      appName: 'Hello Cypress, This is Applitools!',
-      testName: 'My first Cypress Test',
+      appName: 'Applitools',
+      testName: 'Github Cypress Integration',
       browser: { width: 800, height: 600 },
     });
     cy.eyesCheckWindow('Login Page');
